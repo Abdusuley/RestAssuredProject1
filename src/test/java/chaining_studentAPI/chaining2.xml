@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test name="CreateTest">
+    <classes>
+      <class name="chaining_studentAPI.CreateStudent"/>
+	</classes>
+  </test> 
+  
+  <test name="GetTest">
+    <classes>
+         <class name="chaining_studentAPI.GetStudent"/>
+     </classes>
+  </test> 
+  
+  
+  <test  name="UpdateTest">
+    <classes>
+      <class name="chaining_studentAPI.UpdateStudent"/>
+     </classes>
+  </test> 
+  
+  <test name="DeleteTest">
+    <classes>
+        <class name="chaining_studentAPI.DeleteStudent"/>
+    </classes>
+  </test> 
+  
+</suite>
