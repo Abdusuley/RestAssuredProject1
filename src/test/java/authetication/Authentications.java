@@ -56,8 +56,7 @@ public class Authentications {
 	@Test(priority=4)
 	void testBearerTokenAuthentication()
 	{
-//		String bearerToken="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";
-		String bearerToken="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";
+		String bearerToken="";
 		
 		given()
 			.headers("Authorization","Bearer "+bearerToken)
@@ -89,7 +88,7 @@ public class Authentications {
 	void testOAuth2Authentication()
 	{
 		given()
-		.auth().oauth2("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")
+		.auth().oauth2("")
 	.when()
 		.get("https://api.github.com/user/repos")
 	.then()
